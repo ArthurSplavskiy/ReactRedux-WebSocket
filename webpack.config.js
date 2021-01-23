@@ -22,7 +22,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
-        {from: path.resolve(__dirname, 'src/assets/images/**/*'), to: path.resolve(__dirname, 'static/')}
+        {from: path.resolve(__dirname, 'src/assets/favicon.ico'), to: path.resolve(__dirname, 'static/img')}
       ]
     }),
     new MiniCssExtractPlugin({
@@ -40,7 +40,7 @@ module.exports = {
         use: ['file-loader']
       },
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',

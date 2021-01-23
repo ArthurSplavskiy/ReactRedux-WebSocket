@@ -5,4 +5,12 @@ import App from './components/App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/index.css'
 
-render(<App />, document.getElementById('root'))
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
+
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+)

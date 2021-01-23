@@ -10,6 +10,18 @@ body {
     background-color: #21202C;
 }
 
+input:focus {
+    font-size: 15px;
+}
+
+.input-name {
+    background: transparent;
+    color: #545566;
+    outline: none;
+    border: none;
+    border-bottom: .5px solid  #545566;
+}
+
 .copyright {
     font-weight: 200;
     margin: 20px 0 40px 0;
@@ -47,7 +59,7 @@ h1 {
     display: flex;
 }
 
-.controls .edit, .delete {
+.controls .edit, .delete, .add {
     width: 25px;
     height: 25px;
     display: flex;
@@ -67,22 +79,26 @@ h1 {
     background-color: red;
 }
 
-.controls .edit:hover, .delete:hover {
+.controls .add {
+    background-color: green;
+}
+
+.controls .edit:hover, .delete:hover, .add:hover {
     opacity: .7;
 }
 
-.add-button {
-    width: 100%;
-    margin-top: 40px;
-    background-color: transparent;
-    border: 1px dashed #555566;
-    padding: 14px 0;
+.async-button {
+    padding: 14px 50px;
+    background-color: blue;
     border-radius: 6px;
+    font-weight: 200;
+    letter-spacing: 3px;
     transition: all .3 ease-in-out;
+    border: none;
 }
 
-.add-button:hover {
-    background-color: #555566;
+.async-button:hover, .async-button:disabled {
+    opacity: .5;
 }
 
 @media(max-width: 1200px) {
