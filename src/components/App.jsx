@@ -15,7 +15,7 @@ const App = () => {
                         <div className="copyright">Created by Arthur Splavskiy</div>
                     </div>
                     <div className="col-ms-12 col-md-6 col-xl-4 d-flex justify-content-end align-items-center">
-                        <button
+                        {/* <button
                             className="async-button"
                             onClick={() => {
                                 dispatch(wsUser())
@@ -24,7 +24,7 @@ const App = () => {
                             disabled={status}
                         >
                             Отримати з сервера
-                        </button>
+                        </button> */}
                     </div>
                 </div>
                 <div className="row">
